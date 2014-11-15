@@ -294,7 +294,7 @@ void
 bson_string_truncate (bson_string_t *string, /* IN */
                       uint32_t       len)    /* IN */
 {
-   uint32_t alloc;
+   size_t alloc;
 
    bson_return_if_fail (string);
    bson_return_if_fail (len < INT_MAX);
