@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.social_media_url     = "http://twitter.com/mongodb"
   s.source               = { :git => "https://github.com/mongodb/libbson.git", :tag => "1.0.2" }
   s.prepare_command      = './autogen.sh && ./configure'
-  s.source_files         = "src/bson/*.{h,m}", "src/yajl/*.{h,m}"
+  s.source_files         = "src/bson/*.{h,c}", "src/yajl/*.{h,c}"
   s.private_header_files = "src/bson/*-private.h"
   s.compiler_flags       = "-DBSON_COMPILATION -DMONGOC_COMPILATION"
   s.requires_arc         = false
