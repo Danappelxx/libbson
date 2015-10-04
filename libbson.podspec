@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.source_files         = "src/bson/*.{c,h}", "src/yajl/*.{c,h}"
   s.header_mappings_dir  = "src"
   s.private_header_files = "src/bson/*-private.h"
+  s.module_name          = "bson"
   s.compiler_flags       = "-DBSON_COMPILATION"
   s.requires_arc         = false
 end
