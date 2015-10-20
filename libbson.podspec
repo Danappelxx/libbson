@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.header_mappings_dir  = "src"
   s.private_header_files = "src/bson/*-private.h"
   s.module_name          = "bson"
+  s.module_map           = 'src/libbson.modulemap'
   s.compiler_flags       = "-DBSON_COMPILATION"
   s.requires_arc         = false
 end

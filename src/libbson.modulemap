@@ -1,0 +1,6 @@
+framework module libbson {
+  umbrella header "bson.h"
+  
+  export *
+  module * { export * }
+}
